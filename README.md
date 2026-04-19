@@ -18,13 +18,18 @@
 
 ## ✨ **About Me**
 
-```typescript
-const abdalla: Developer = {
-  title: "FullStack .NET Developer",
-  location: "Egypt",
-  passion: "Building scalable, clean, and maintainable applications",
-  currentlyWorking: "Multi-Vendor Marketplace Platform",
-  learning: ["Microservices", "DDD", "GraphQL"],
-  askMeAbout: ["Clean Architecture", "Design Patterns", "ASP.NET Core", "React"],
-  funFact: "I treat code like literature - it should tell a clear story"
-};
+graph TB
+    subgraph "Clean Architecture"
+        A[Client<br/>React/TypeScript] --> B[Controller<br/>ASP.NET Core MVC]
+        B --> C[Application Layer<br/>CQRS + MediatR]
+        C --> D[Domain Layer<br/>Entities + Business Rules]
+        C --> E[Infrastructure Layer<br/>Data + External Services]
+        E --> F[(Database<br/>PostgreSQL)]
+    end
+    
+    style A fill:#61dafb,stroke:#333,stroke-width:2px
+    style B fill:#512bd4,stroke:#333,stroke-width:2px
+    style C fill:#239120,stroke:#333,stroke-width:2px
+    style D fill:#f34b7d,stroke:#333,stroke-width:2px
+    style E fill:#f1e05a,stroke:#333,stroke-width:2px
+    style F fill:#4169e1,stroke:#333,stroke-width:2px
