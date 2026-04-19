@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🚀 Ahmed Ali | FullStack .NET Developer
+# 🚀 Abdalla Yhya | FullStack .NET Developer
 
 ### *Building scalable, clean, and high-performance web applications*
 
