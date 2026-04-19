@@ -4,10 +4,10 @@
 
 ### *Building scalable, clean, and high-performance web applications*
 
-[![GitHub Followers](https://img.shields.io/github/followers/yourusername?style=for-the-badge&logo=github&color=0d1117)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:your.email@example.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel)](https://yourportfolio.com)
+[![GitHub Followers](https://img.shields.io/github/followers/yourusername?style=for-the-badge&logo=github&color=0d1117)](https://github.com/Abdallayhya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)]([https://www.linkedin.com/in/abdalla-yhya/])
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:abdallayhya77@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel)]([https://my-portfolio-blue-iota-55.vercel.app/])
 
 </div>
 
@@ -78,7 +78,7 @@ graph TD
     F --> G[(Database)]
     F --> H[External Services]
     
-    style A fill:#61dafb
+    style A fill:#239120
     style C fill:#512bd4
     style D fill:#239120
     style E fill:#f34b7d
