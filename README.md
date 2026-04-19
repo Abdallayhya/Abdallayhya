@@ -1,13 +1,13 @@
 <div align="center">
   
-# 🚀 Abdalla Yhya | FullStack .NET Developer
+# 🚀 Abdalla Yahya | FullStack .NET Developer
 
 ### *Building scalable, clean, and high-performance web applications*
 
-[![GitHub Followers](https://img.shields.io/github/followers/yourusername?style=for-the-badge&logo=github&color=0d1117)](https://github.com/Abdallayhya)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)]([https://www.linkedin.com/in/abdalla-yhya/])
+[![GitHub Followers](https://img.shields.io/github/followers/Abdallayhya?style=for-the-badge&logo=github&color=0d1117)](https://github.com/Abdallayhya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/abdalla-yhya/)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:abdallayhya77@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel)]([https://my-portfolio-blue-iota-55.vercel.app/])
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel)](https://my-portfolio-blue-iota-55.vercel.app/)
 
 </div>
 
@@ -35,7 +35,6 @@ I'm a **FullStack .NET Developer** passionate about building **clean, maintainab
 | **Clean Architecture** | ⭐⭐⭐⭐⭐ | Main architecture |
 | **CQRS + MediatR** | ⭐⭐⭐⭐ | Command/Query separation |
 | **SignalR** | ⭐⭐⭐⭐ | Real-time features |
-| **gRPC** | ⭐⭐⭐ | Microservices communication |
 
 ### Frontend
 | Technology | Proficiency | Projects |
@@ -47,39 +46,36 @@ I'm a **FullStack .NET Developer** passionate about building **clean, maintainab
 | **Redux Toolkit** | ⭐⭐⭐⭐ | State management |
 | **React Query** | ⭐⭐⭐⭐ | Server state |
 
-### Database
-| Technology | Proficiency | Use Case |
-|------------|-------------|----------|
-| **PostgreSQL** | ⭐⭐⭐⭐⭐ | Primary database |
-| **SQL Server** | ⭐⭐⭐⭐ | Enterprise projects |
-| **MongoDB** | ⭐⭐⭐ | Document storage |
-| **Redis** | ⭐⭐⭐⭐ | Caching, sessions |
-
-### DevOps & Tools
+### Database & Tools
 | Technology | Purpose |
 |------------|---------|
-| **Git/GitHub** | Version control, CI/CD |
+| **PostgreSQL** | Primary database |
+| **SQL Server** | Enterprise projects |
+| **Redis** | Caching, sessions |
+| **Git/GitHub** | Version control |
 | **Docker** | Containerization |
 | **Azure/AWS** | Cloud deployment |
-| **GitHub Actions** | Automation |
-| **Swagger/Postman** | API documentation/testing |
 
 ---
 
 ## 🏗️ Architecture Philosophy
 
-```mermaid
-graph TD
-    A[Client - React/TS] --> B[API Gateway]
-    B --> C[Controller - MVC]
-    C --> D[Application Layer - CQRS]
-    D --> E[Domain Layer - Core Business Logic]
-    D --> F[Infrastructure Layer]
-    F --> G[(Database)]
-    F --> H[External Services]
-    
-    style A fill:#239120
-    style C fill:#512bd4
-    style D fill:#239120
-    style E fill:#f34b7d
-    style F fill:#f1e05a
+```csharp
+// ✅ Clean Code - Meaningful names, small methods
+public class OrderService : IOrderService
+{
+    public async Task<OrderResult> ProcessOrderAsync(OrderRequest request)
+    {
+        ValidateOrder(request);
+        var order = CreateOrderFromRequest(request);
+        await ApplyBusinessRulesAsync(order);
+        return await PersistAndReturnResultAsync(order);
+    }
+}
+
+// ✅ Design Patterns - Repository, Unit of Work, Strategy
+public interface IRepository<T> where T : IAggregateRoot { /* ... */ }
+
+// ✅ SOLID Principles - Single Responsibility, Open/Closed
+// ✅ OOP - Encapsulation, Inheritance, Polymorphism
+// ✅ RESTful APIs - Resource-based, stateless, proper status codes
